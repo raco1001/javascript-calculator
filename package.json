@@ -2,14 +2,19 @@
   "name": "javascript-calculator",
   "version": "0.1.0",
   "scripts": {
-    "test": "jest"
+    "build": "npx tsc && cp src/index.html dist/index.html && cp src/styles.css dist/styles.css",
+    "start": "node dist/server.js"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
-    "ts-jest": "^29.2.5"
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2"
   }
 }
