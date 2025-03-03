@@ -6,6 +6,12 @@
     "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@entities/*": ["entities/*"],
+      "@features/*": ["entities/features/*"],
+      "@shared/*": ["entities/shared/*"]
+    },
     "outDir": "./dist"
   }
 }
