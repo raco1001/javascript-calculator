@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "types": ["jest"], 
-    "moduleResolution": "node",
-    "target": "ES6",
+    "target": "ESNext",
+    "lib": ["ES2022", "DOM"],  
+    "moduleResolution": "bundler",
     "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
+    "resolveJsonModule": true,
     "paths": {
       "@entities/*": ["entities/*"],
-      "@features/*": ["entities/features/*"],
-      "@shared/*": ["entities/shared/*"]
+      "@features/*": ["features/*"],
+      "@shared/*": ["shared/*"]
     },
-    "outDir": "./dist"
-  }
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
 }
