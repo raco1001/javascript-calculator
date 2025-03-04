@@ -1,6 +1,6 @@
 프로젝트의 구조는 간략히 다음과 같습니다.
 
-
+```
 root/ # 프로젝트 루트 디렉토
 ├── dist # 타입스크립트에서 컴파일 된 결과물
 │   ├── app
@@ -45,3 +45,4 @@ root/ # 프로젝트 루트 디렉토
 │       └── calculatorWidget
 │           └── CalculatorUI.ts
 └── tsconfig.json
+```
