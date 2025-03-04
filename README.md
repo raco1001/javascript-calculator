@@ -1,6 +1,7 @@
 프로젝트의 구조는 간략히 다음과 같습니다.
 
-.
+
+root/ # 프로젝트 루트 디렉토
 ├── dist # 타입스크립트에서 컴파일 된 결과물
 │   ├── app
 │   │   ├── index.html # 계산기 웹 화면
@@ -13,7 +14,7 @@
 │   │       ├── Formatter.js # 값의 표시 형식을 지정
 │   │       ├── OperatorPrecedence.js # 연산자의 우선순위를 설정
 │   │       ├── PostfixEvaluator.js # 후위 표기법 계산
-│   │       └── Tokenizer.js # 토큰(기호) 추출
+│   │       └── Tokenizer.js # 수식을 개별적인 토큰으로 분
 │   ├── server.js
 │   ├── tests
 │   └── widgets
