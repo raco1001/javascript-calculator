@@ -1,0 +1,46 @@
+프로젝트의 구조는 간략히 다음과 같습니다.
+
+.
+├── dist # 타입스크립트에서 컴파일 된 결과물
+│   ├── app
+│   │   ├── index.html # 계산기 웹 화면
+│   │   ├── index.js # 이벤트 리스너
+│   │   └── styles.css
+│   ├── entities
+│   │   └── calculator
+│   │       ├── Calculator.js # 계산을 진행하고 결과를 반환
+│   │       ├── ExpressionParser.js # 입력된 문자열을 파싱
+│   │       ├── Formatter.js # 값의 표시 형식을 지정
+│   │       ├── OperatorPrecedence.js # 연산자의 우선순위를 설정
+│   │       ├── PostfixEvaluator.js # 후위 표기법 계산
+│   │       └── Tokenizer.js # 토큰(기호) 추출
+│   ├── server.js
+│   ├── tests
+│   └── widgets
+│       └── calculatorWidget
+│           └── CalculatorUI.js
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── index.html
+│   │   ├── index.ts
+│   │   └── styles.css
+│   ├── entities
+│   │   └── calculator
+│   │       ├── Calculator.ts
+│   │       ├── ExpressionParser.ts
+│   │       ├── Formatter.ts
+│   │       ├── OperatorPrecedence.ts
+│   │       ├── PostfixEvaluator.ts
+│   │       └── Tokenizer.ts
+│   ├── server.ts
+│   ├── tests
+│   │   ├── Calculator.test.ts
+│   │   ├── ExpressionParser.test.ts
+│   │   ├── PostfixEvaluator.test.ts
+│   │   └── formatter.test.ts
+│   └── widgets
+│       └── calculatorWidget
+│           └── CalculatorUI.ts
+└── tsconfig.json
