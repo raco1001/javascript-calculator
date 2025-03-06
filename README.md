@@ -15,7 +15,6 @@ root/ # 프로젝트 루트 디렉토리
 │   │       ├── OperatorPrecedence.js # 연산자의 우선순위를 설정
 │   │       ├── PostfixEvaluator.js # 후위 표기법 계산
 │   │       └── Tokenizer.js # 수식을 개별적인 토큰으로 분리
-│   ├── server.js # node.js 로 기동할 경우 진입점
 │   └── widgets
 │       └── calculatorWidget
 │           └── CalculatorUI.js # UI 매핑 후 이벤트 리스너 등록 
@@ -34,7 +33,6 @@ root/ # 프로젝트 루트 디렉토리
 │   │       ├── OperatorPrecedence.ts
 │   │       ├── PostfixEvaluator.ts
 │   │       └── Tokenizer.ts
-│   ├── server.ts
 │   ├── tests
 │   │   ├── Calculator.test.ts
 │   │   ├── ExpressionParser.test.ts
